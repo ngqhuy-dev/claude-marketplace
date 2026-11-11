@@ -1,0 +1,100 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ngqhuy-marketplace",
+  "description": "Curated Claude Code plugins for Flutter, React Native and general engineering. Every plugin is pinned to its upstream repository.",
+  "owner": {
+    "name": "ngqhuy-dev",
+    "url": "https://github.com/ngqhuy-dev"
+  },
+  "plugins": [
+    {
+      "name": "dart-flutter",
+      "description": "Official Dart and Flutter skills plus the Dart MCP server.",
+      "category": "development",
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/flutter/agent-plugins",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/flutter/agent-plugins.git",
+        "sha": "b7d5a0be4195b82fe073620fb52f594b0809eacf"
+      }
+    },
+    {
+      "name": "flutter",
+      "description": "Flutter engineering skills: architecture, Riverpod, testing, persistence, i18n/RTL, accessibility, performance, CI.",
+      "category": "development",
+      "license": "MIT",
+      "homepage": "https://github.com/zakariaf/Flutter-Skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/zakariaf/Flutter-Skills.git",
+        "sha": "e073e5ea10c963d2c52ab1e423bd314c28a56154"
+      }
+    },
+    {
+      "name": "react-native-best-practices",
+      "description": "React Native performance, Metro, FlatList vs ScrollView, Expo vs bare, React Navigation patterns.",
+      "category": "development",
+      "license": "MIT",
+      "homepage": "https://github.com/petro-nazarenko/mobile-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/petro-nazarenko/mobile-skills.git",
+        "sha": "677dbfbace55d613dad87fadbd8dd9774a2341ce"
+      }
+    },
+    {
+      "name": "hzblj-skills",
+      "description": "React / React Native skills: clean code, type safety, Reanimated, Skia, GSAP, Tailwind, Next.js, plus tiered agents.",
+      "category": "development",
+      "license": "MIT",
+      "homepage": "https://github.com/hzblj/skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/hzblj/skills.git",
+        "sha": "51cae7820bbbd8230bf906e63f5ba81896ea41a3"
+      }
+    },
+    {
+      "name": "engineering",
+      "description": "Standups, code review, architecture decisions, incident response, technical documentation.",
+      "category": "productivity",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/anthropics/knowledge-work-plugins/tree/main/engineering",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/anthropics/knowledge-work-plugins.git",
+        "path": "engineering",
+        "sha": "877a617b435ee2edfb002d9a3703c0a1a03aa1ba"
+      }
+    },
+    {
+      "name": "document-skills",
+      "description": "Read, create and edit Word, Excel, PowerPoint and PDF files.",
+      "category": "productivity",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/anthropics/skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/anthropics/skills.git",
+        "sha": "2c5958ecac7cee2b583967a2c4981d0f4a75c579"
+      },
+      "strict": false,
+      "skills": ["./skills/docx", "./skills/xlsx", "./skills/pptx", "./skills/pdf"]
+    },
+    {
+      "name": "skill-creator",
+      "description": "Create, improve and evaluate skills.",
+      "category": "development",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/anthropics/skills/tree/main/skills/skill-creator",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/anthropics/skills.git",
+        "sha": "2c5958ecac7cee2b583967a2c4981d0f4a75c579"
+      },
+      "strict": false,
+      "skills": ["./skills/skill-creator"]
+    }
+  ]
+}
