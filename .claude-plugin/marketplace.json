@@ -95,6 +95,69 @@
       },
       "strict": false,
       "skills": ["./skills/skill-creator"]
+    },
+    {
+      "name": "andrej-karpathy-skills",
+      "description": "Behavioral guidelines to reduce common LLM coding mistakes: think first, simplicity, surgical changes, goal-driven execution.",
+      "category": "workflow",
+      "license": "MIT",
+      "homepage": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/multica-ai/andrej-karpathy-skills.git",
+        "sha": "2c606141936f1eeef17fa3043a72095b4765b9c2"
+      }
+    },
+    {
+      "name": "postman",
+      "description": "Postman workflows: API mocking, collection tests, CI checks, monitors, Flows and API documentation.",
+      "category": "development",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/postmanlabs/postman-plugin",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/postmanlabs/postman-plugin.git",
+        "sha": "1fdd3f1e2736c7cb83780a221cb9f83641215ab7"
+      }
+    },
+    {
+      "name": "building-react-native-apps",
+      "description": "React Native skills for performance, navigation, TV, library development, and upgrades.",
+      "category": "development",
+      "license": "MIT",
+      "homepage": "https://github.com/callstackincubator/agent-skills/tree/main/plugins/building-react-native-apps",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/callstackincubator/agent-skills.git",
+        "path": "plugins/building-react-native-apps",
+        "sha": "2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9"
+      }
+    },
+    {
+      "name": "testing-react-native-apps",
+      "description": "React Native testing: CI artifacts, test authoring, device automation, and QA workflows.",
+      "category": "development",
+      "license": "MIT",
+      "homepage": "https://github.com/callstackincubator/agent-skills/tree/main/plugins/testing-react-native-apps",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/callstackincubator/agent-skills.git",
+        "path": "plugins/testing-react-native-apps",
+        "sha": "2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9"
+      }
+    },
+    {
+      "name": "migrating-to-react-native",
+      "description": "Assess and incrementally migrate native iOS and Android apps to React Native.",
+      "category": "development",
+      "license": "MIT",
+      "homepage": "https://github.com/callstackincubator/agent-skills/tree/main/plugins/migrating-to-react-native",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/callstackincubator/agent-skills.git",
+        "path": "plugins/migrating-to-react-native",
+        "sha": "2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9"
+      }
     }
   ]
 }

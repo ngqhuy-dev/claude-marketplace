@@ -21,6 +21,11 @@ no third-party code is copied into this repo.
 | engineering | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins/tree/main/engineering) | Apache-2.0 |
 | document-skills | [anthropics/skills](https://github.com/anthropics/skills) (docx, xlsx, pptx, pdf) | Apache-2.0 |
 | skill-creator | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/skill-creator) | Apache-2.0 |
+| andrej-karpathy-skills | [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | MIT |
+| postman | [postmanlabs/postman-plugin](https://github.com/postmanlabs/postman-plugin) | Apache-2.0 |
+| building-react-native-apps | [callstackincubator/agent-skills](https://github.com/callstackincubator/agent-skills/tree/main/plugins/building-react-native-apps) | MIT |
+| testing-react-native-apps | [callstackincubator/agent-skills](https://github.com/callstackincubator/agent-skills/tree/main/plugins/testing-react-native-apps) | MIT |
+| migrating-to-react-native | [callstackincubator/agent-skills](https://github.com/callstackincubator/agent-skills/tree/main/plugins/migrating-to-react-native) | MIT |
 
 ## Updating a plugin
 
