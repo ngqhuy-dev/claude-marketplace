@@ -16,7 +16,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/flutter/agent-plugins.git",
-        "sha": "b7d5a0be4195b82fe073620fb52f594b0809eacf"
+        "sha": "e5a88d2be19cbf7ba1ef974375e5846492aca2ac"
       }
     },
     {
@@ -65,7 +65,7 @@
         "source": "git-subdir",
         "url": "https://github.com/anthropics/knowledge-work-plugins.git",
         "path": "engineering",
-        "sha": "877a617b435ee2edfb002d9a3703c0a1a03aa1ba"
+        "sha": "02717ef04446b6ef5aa4b8af15bb536d79f42ed0"
       }
     },
     {
@@ -117,7 +117,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/postmanlabs/postman-plugin.git",
-        "sha": "1fdd3f1e2736c7cb83780a221cb9f83641215ab7"
+        "sha": "613f738902007da7b02aed8565cbc527e5af54ca"
       }
     },
     {
@@ -130,7 +130,7 @@
         "source": "git-subdir",
         "url": "https://github.com/callstackincubator/agent-skills.git",
         "path": "plugins/building-react-native-apps",
-        "sha": "2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9"
+        "sha": "59e9d17446a248b21d86f078fcd0bd2d36db1ca4"
       }
     },
     {
@@ -143,7 +143,7 @@
         "source": "git-subdir",
         "url": "https://github.com/callstackincubator/agent-skills.git",
         "path": "plugins/testing-react-native-apps",
-        "sha": "2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9"
+        "sha": "59e9d17446a248b21d86f078fcd0bd2d36db1ca4"
       }
     },
     {
@@ -156,7 +156,7 @@
         "source": "git-subdir",
         "url": "https://github.com/callstackincubator/agent-skills.git",
         "path": "plugins/migrating-to-react-native",
-        "sha": "2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9"
+        "sha": "59e9d17446a248b21d86f078fcd0bd2d36db1ca4"
       }
     }
   ]
