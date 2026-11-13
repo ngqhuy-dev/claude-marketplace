@@ -1,0 +1,43 @@
+name: Validate manifest
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check marketplace.json
+        run: |
+          python3 - <<'EOF'
+          import json, re, sys
+          data = json.load(open(".claude-plugin/marketplace.json"))
+          names = [p["name"] for p in data["plugins"]]
+          dupes = {n for n in names if names.count(n) > 1}
+          bad_sha = [p["name"] for p in data["plugins"]
+                     if not re.fullmatch(r"[0-9a-f]{40}", p["source"].get("sha", ""))]
+          if dupes or bad_sha:
+              sys.exit(f"duplicate names: {dupes or '-'}; missing/invalid sha: {bad_sha or '-'}")
+          print(f"OK: {len(names)} plugins")
+          EOF
+
+      - name: Check every pinned SHA exists upstream
+        run: |
+          python3 - <<'EOF'
+          import json, subprocess, sys, tempfile
+          data = json.load(open(".claude-plugin/marketplace.json"))
+          pins = {(p["source"]["url"], p["source"]["sha"]) for p in data["plugins"]}
+          failed = []
+          for url, sha in sorted(pins):
+              with tempfile.TemporaryDirectory() as d:
+                  subprocess.run(["git", "init", "-q", d], check=True)
+                  r = subprocess.run(["git", "-C", d, "fetch", "-q", "--depth=1", url, sha])
+                  print(("OK  " if r.returncode == 0 else "FAIL"), url, sha[:7])
+                  if r.returncode:
+                      failed.append(url)
+          sys.exit(1 if failed else 0)
+          EOF
